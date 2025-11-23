@@ -4,9 +4,8 @@ import PromptInput from './components/PromptInput';
 import LanguageSelector from './components/LanguageSelector';
 import CodeOutput from './components/CodeOutput';
 import HistoryPanel from './components/HistoryPanel';
-import dotenv from 'dotenv';
-dotenv.config();
-const API_URL = process.env.REACT_APP_API_URL;
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 function App() {
     const [theme, setTheme] = useState('light');
