@@ -1,7 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const genAI = new GoogleGenerativeAI("AIzaSyBRkn4i8WA_YjFPOond2gPHVUEg70qbGeg");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 export const generateCode = async (prompt, language) => {
     try {
